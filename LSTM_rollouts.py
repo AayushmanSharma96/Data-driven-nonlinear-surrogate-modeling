@@ -267,7 +267,7 @@ if __name__ == '__main__':
     # csv_rows = []
     # csv_rows.append(['Epoch', 'Train Loss', 'Test Loss', 'Teacher Ratio'])
     
-    '''with open('epoch_loss_10.csv', 'w', newline='') as f:
+    with open('epoch_loss_10.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['Epoch', 'Train Loss', 'Test Loss', 'Teacher Ratio'])
         
@@ -310,13 +310,8 @@ if __name__ == '__main__':
             f.flush()
     
     torch.save(lstm_model, 'models/LSTM_pendulum_ic10_model_undamped.pt')
-    print('Training process has finished.')'''
+    print('Training process has finished.')
     
-    # Write CSV file.
-    # with open('epoch_loss.csv', 'w', newline='') as f:
-    #     writer = csv.writer(f)
-    #     writer.writerows(csv_rows)
-    # print('Per-epoch losses saved to epoch_loss.csv')
     
     ###############################################
     # Generate and Plot Trajectories
@@ -368,4 +363,3 @@ if __name__ == '__main__':
     plt.legend()
     plt.savefig('plots/LSTM_10deg_roll_longer_4.png')
     
-    sys.exit()
